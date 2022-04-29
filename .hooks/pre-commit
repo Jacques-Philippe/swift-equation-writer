@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Build the project
+./dev/build-project.sh
+
+# Run tests
+./dev/run-tests.sh
