@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Install simulators
+      run: xcversion simulators --install='iOS 15.4'
     - name: Build
       run: ./dev/build-project.sh
     - name: Run tests
